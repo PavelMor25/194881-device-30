@@ -16,7 +16,8 @@ try {
   isStorageSuport = false;
 };
 
-btnOpenPopupWriteUs.addEventListener('click', function() {
+btnOpenPopupWriteUs.addEventListener('click', function(evt) {
+  evt.preventDefault();
   popupWriteUs.classList.add('popup-open');
   writeUsInputUser.focus();
 })

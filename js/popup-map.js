@@ -2,7 +2,8 @@ const popupMap = document.querySelector ('.popup-map');
 const btnCloseMap = popupMap.querySelector('.btn-map-close');
 const btnOpenPopupMap = document.querySelector('.map-open-img');
 
-btnOpenPopupMap.addEventListener('click', function() {
+btnOpenPopupMap.addEventListener('click', function(evt) {
+  evt.preventDefault();
   popupMap.classList.add('popup-open');
 })
 
