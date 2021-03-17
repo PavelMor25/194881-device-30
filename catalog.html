@@ -6,7 +6,7 @@
   <title>Девайс - интернет магазин Электроники</title>
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/180.png">
@@ -22,7 +22,8 @@
       </a>
       <div class="top-header">
         <form class="poisk">
-          <input class="input-poisk" type="text" placeholder="Поиск по сайту">
+          <label class="visually-hidden" for="poisk-field">Поиск по сайту</label>
+          <input class="input-poisk" type="text" id="poisk-field" placeholder="Поиск по сайту">
           <button class="btn btn-poisk"><span>Найти</span></button>
         </form>
         <a class="btn btn-profile" href="#">Валентин Петухов</a>
@@ -150,7 +151,7 @@
                 <h3 class="product-title">Любительская селфи-палка</h3>
                 <span class="price">1 100 руб.</span>
               </a>
-              <img class="product-image" src="img/item-1.jpg" width="360" height="380" alt="">
+              <img class="product-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="hover-img">
                 <p class="btns-hover">
                   <a class="btn btn-bg btn-in-cart"><span>В корзину</span></a>
@@ -164,7 +165,7 @@
                   селфи-палка </h3>
                 <span class="price">1 500 руб.</span>
               </a>
-              <img class="product-image" src="img/item-2.jpg" width="360" height="380" alt="">
+              <img class="product-image" src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка со стабилизатором">
               <div class="hover-img">
                 <p class="btns-hover">
                   <a class="btn btn-bg btn-in-cart"><span>В корзину</span></a>
@@ -177,7 +178,7 @@
                 <h3 class="product-title">Непотопляемая<br> селфи-палка</h3>
                 <span class="price">1 500 руб.</span>
               </a>
-              <img class="product-image" src="img/item-3.jpg" width="360" height="380" alt="">
+              <img class="product-image" src="img/item-3.jpg" width="360" height="380" alt="Камера с поплавком">
               <div class="hover-img">
                 <p class="btns-hover">
                   <a class="btn btn-bg btn-in-cart"><span>В корзину</span></a>
@@ -190,7 +191,7 @@
                 <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
                 <span class="price">1 900 руб.</span>
               </a>
-              <img class="product-image" src="img/item-4.jpg" width="360" height="380" alt="">
+              <img class="product-image" src="img/item-4.jpg" width="360" height="380" alt="Рука с креплением для камеры">
               <div class="hover-img">
                 <p class="btns-hover">
                   <a class="btn btn-bg btn-in-cart"><span>В корзину</span></a>
@@ -218,12 +219,12 @@
       <a class="logo-footer" href="index.html">
         <img src="img/logo-device-footer.png" alt="Device logo" width="163" height="35">
       </a>
-      <header class="footer-header">
+      <div class="footer-header">
         <a class="btn btn-profile-footer" href="#">Валентин Петухов</a>
         <a class="btn btn-login-footer btn-way-out-footer" href="#">Выйти</a>
         <a class="compare-footer" href="#">Сравнить</a>
         <a class="cart-footer" href="#">Корзина</a>
-      </header>
+      </div>
       <div class="middle-footer">
         <p class="footer-contacts adress">г. Москва, ул. Строителей, 15</p>
         <p class="footer-contacts tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>

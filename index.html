@@ -6,7 +6,7 @@
   <title>Девайс - интернет магазин Электроники</title>
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/icons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/icons/180.png">
@@ -22,7 +22,8 @@
       </a>
       <div class="top-header">
         <form class="poisk">
-          <input class="input-poisk" type="text" placeholder="Поиск по сайту">
+          <label class="visually-hidden" for="poisk-field">Поиск по сайту</label>
+          <input class="input-poisk" type="text" id="poisk-field" placeholder="Поиск по сайту">
           <button class="btn btn-poisk"><span>Найти</span></button>
         </form>
         <a class="btn btn-login" href="#">Войти</a>
@@ -103,31 +104,37 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>48 часов</tdЮ </tr> </tbody> </table> </div> </li> <li class="slide slide-three ">
-                      <h3 class="visually-hidden">Квадракоптер</h3>
-                      <div class="promo-image">
-                        <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
-                      </div>
-                      <div class="promo-info">
-                        <p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
-                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под
-                          стандартную камеру.</p>
-                        <a class="btn btn-bg btn-promo" href="#">Подробнее</a>
-                        <table class="promo-table table-slide-3">
-                          <thead>
-                            <tr>
-                              <th>Дальность полета</th>
-                              <th>Радиус поражения</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>800 м</td>
-                              <td>50 м</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                    <td>48 часов</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="slide slide-three ">
+            <h3 class="visually-hidden">Квадракоптер</h3>
+            <div class="promo-image">
+              <img src="img/slider-3.png" width="526" height="334" alt="Квадракоптер">
+            </div>
+            <div class="promo-info">
+              <p class="slide-title">Порхает как бабочка, жалит как пчела!</p>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под
+                стандартную камеру.</p>
+              <a class="btn btn-bg btn-promo" href="#">Подробнее</a>
+              <table class="promo-table table-slide-3">
+                <thead>
+                  <tr>
+                    <th>Дальность полета</th>
+                    <th>Радиус поражения</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </li>
         </ul>
         <div class="btns-promo-slide">
@@ -273,7 +280,7 @@
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
         <a class="map-open-img" href="#">
-        <img  src="img/map-image.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
+          <img src="img/map-image.jpg" alt="г. Москва, ул. Строителей, 15" width="560" height="222">
         </a>
         <a class="btn btn-bg btn-contacts" href="#">Напишите нам</a>
       </section>
@@ -286,11 +293,11 @@
       <a class="logo-footer">
         <img src="img/logo-device-footer.png" alt="Device logo" width="163" height="35">
       </a>
-      <header class="footer-header">
+      <div class="footer-header">
         <a class="btn btn-login-footer" href="#">Войти</a>
         <a class="compare-footer" href="#">Сравнить</a>
         <a class="cart-footer" href="#">Корзина</a>
-      </header>
+      </div>
       <div class="middle-footer">
         <p class="footer-contacts adress">г. Москва, ул. Строителей, 15</p>
         <p class="footer-contacts tel">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
@@ -371,8 +378,8 @@
         style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
         href="https://yandex.ru/maps/213/moscow/house/ulitsa_stroiteley_15/Z04YcwVpT0ADQFtvfXp5d3VrZA==/?ll=37.531165%2C55.687232&utm_medium=mapframe&utm_source=maps&z=16"
         style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Строителей, 15 — Яндекс.Карты</a><iframe
-        src="https://yandex.ru/map-widget/v1/-/CCUQaAs7lD" width="961" height="554" frameborder="1"
-        allowfullscreen="true" style="position:relative;"></iframe></div>
+        src="https://yandex.ru/map-widget/v1/-/CCUQaAs7lD" width="961" height="554"
+         style="position:relative;"></iframe></div>
     <button class="btn btn-close-popup btn-map-close" type="button" aria-label="Закрыть"></button>
   </section>
 
